@@ -1,0 +1,60 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+
+# --- Virtual environment ---
+.venv/
+env/
+venv/
+.venv
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_convert
+
+# --- Data ---
+# Raw geospatial data can be VERY heavy; never commit it.
+data/raw/
+data/external/
+
+# But DO keep processed small artifacts
+# (GeoJSON, small CSVs) → these stay in the repo
+
+# --- Outputs ---
+outputs/maps/*.html
+outputs/maps/*.png
+outputs/model_results/
+
+# But leave folder structure
+!outputs/
+!outputs/maps/
+!outputs/model_results/
+
+# --- Large raster formats ---
+*.tif
+*.tiff
+*.vrt
+*.img
+*.jp2
+
+# --- GIS formats ---
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gdb
+*.gpkg
+*.cpg
+*.qmd
+*.qgz
+
+# --- VS Code ---
+.vscode/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
