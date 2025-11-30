@@ -11,8 +11,9 @@ investigations, the city lost vegetation equivalent to **54 football pitches in 
 year**, the largest decline among Nordic municipalities. Satellite-derived indicators
 support this trend, showing a persistent reduction in green cover  
 (*Expressen, 2025: “Göteborg – en allt gråare stad när växtlighet försvinner”*).
+https://www.expressen.se/nyheter/sverige/goteborg-en-allt-graare-stad-nar-vaxtlighet-forsvinner/ 
 
-At the same time, the city is undergoing rapid densification and large construction projects.
+At the same time, the city is undergoing rapid densification and large construction projects, which in some cases alter its geography for years at a time.
 This raises a core question:
 
 > **Where in today’s impervious surfaces could meaningful greening interventions be
@@ -56,7 +57,7 @@ This is an **exploratory and diagnostic** prototype, not a prescriptive planning
 
 ## 4. Project Structure
 
-'''
+```
 impervious-to-green-gbg/
 │
 ├── data/
@@ -75,20 +76,20 @@ impervious-to-green-gbg/
 │ └── 05_district_analysis.ipynb
 │
 └── README.md
-'''
+```
 
 ---
 
 ## 5. Workflow Summary
 
-### **Notebook 01 — Data Preparation**
+### **Notebook 01 - Data Preparation**
 - Load UA2018 polygons for Göteborg  
 - Add OSM road + parking polygons  
 - Clip everything to municipal boundary  
 - Clean geometry, remove tiny artefacts  
 - Export unified impervious dataset  
 
-### **Notebook 02 — Feature Engineering**
+### **Notebook 02 - Feature Engineering**
 Engineered geospatial features such as:
 
 - area and perimeter  
@@ -100,7 +101,7 @@ Engineered geospatial features such as:
 - distance to major roads  
 - district assignment (stadsområden)
 
-### **Notebook 03 — Suitability Score**
+### **Notebook 03 - Suitability Score**
 Created a transparent score combining:
 
 - **Environmental suitability** (proximity to green/water)  
@@ -115,7 +116,7 @@ Scaled and combined into a **0–1 suitability index**, classified into:
 
 Static and interactive maps produced.
 
-### **Notebook 04 — ML Classifier Prototype**
+### **Notebook 04 - ML Classifier Prototype**
 A small Random Forest classifier was trained using the engineered features to
 predict the suitability class. The aim was to test whether the scoring framework
 is internally coherent.
@@ -124,7 +125,7 @@ is internally coherent.
 - Feature importances aligned with conceptual expectations  
 - Demonstrated that the score is not random but created from meaningful features  
 
-### **Notebook 05 — District-Level Analysis**
+### **Notebook 05 - District-Level Analysis**
 Aggregated suitability areas across Göteborg’s four major districts:
 
 | District | % High | % Medium | % Low |
@@ -216,11 +217,14 @@ All outputs will be written to data/processed/ and outputs/maps/.
 
 ## 11. Acknowledgements
 
+
 This prototype was developed as a learning exercise inspired by the goals of
 RISE’s Grey to Green project. All data used are open geospatial datasets.
 
 ---
 
 ## 12. License
+
+
 
 MIT License.
