@@ -160,12 +160,11 @@ population exposure, heat stress, or cost modelling.
 ## 7. Visual Outputs
 
 ### Static map  
-*(save figure into outputs/figures and link it)*
+![Suitability map](outputs/figures/ua2018_suitability_static.png)
 
 ### Interactive map  
 The interactive map can be opened via:
-
-outputs/maps/ua2018_suitability_interactive.html 
+(https://hannitomado.github.io/impervious-to-green-gbg/map.html))
 
 
 It allows zooming, polygon inspection, and suitability exploration.
@@ -228,3 +227,4 @@ RISE’s Grey to Green project. All data used are open geospatial datasets.
 
 
 MIT License.
+
